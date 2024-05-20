@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+    </div>
+    <div id="canvas-container"></div>
+    <div id="follower"></div>
+    <button id="scrollTopBtn">&#8679;</button>
+    <div id="content">
+        <section>
+            <center>
+                <h1 class="name">
+                    <span class="letter">A</span>
+                    <span class="letter">R</span>
+                    <span class="letter">Y</span>
+                    <span class="letter">A</span>
+                    <span class="letter">N</span>
+                </h1>
+            </center>
+            <div class="text-container">
+                <h4 class="scroll-down">
+                    <span class="scroll-down-text">Scroll</span>
+                    <span class="scroll-down-text">down</span>
+                </h4>
+                <h4 class="description">
+                    <span class="description-text">Computing</span>
+                    <span class="description-text">Enthusiast</span>
+                </h4>
+            </div>
+            
+        </section>
+        <section class="transition" id="second-section">
+            <h1 id="section-title1">Section 1</h1>
+            <h1 id="about-title" style="opacity: 0; transform: scale(0);">About Me</h1>
+        </section>
+    </div>
+    <section id="vertical">
+        <div class="container">
+            <div class="vertical__content">
+                <div class="col col_left" id="WhoAmI">
+                    <h2 class="vertical__heading">$WhoAmI</h2>
+                </div>
+                <div class="col col_right">
+                    <div class="vertical__item">
+                        <h3>Introduction:</h3>
+                        <p>Hello there! I'm Aryan Syam, a passionate explorer in the captivating world of technology. Ever since my early days, I've been enamored by the endless possibilities that computing offers. It all began with a single line of code, "print('Hello World!')," igniting a spark that has since evolved into a fervent passion for programming and innovation.</p>
+                    </div>
+                    <div class="vertical__item">
+                        <h3>Journey in Computing:</h3>
+                        <p>My journey in computing began with my first encounter with Python at the age of nine. From there, I embarked on a quest for knowledge, delving into advanced Python modules like tkinter and pygame. As I progressed through secondary school, my thirst for learning led me to explore languages like C++, enabling me to develop various projects, from classic games like tic-tac-toe to innovative prototypes like a wordle clone.</p>
+                    </div>
+                    <div class="vertical__item">
+                        <h3>Exploring Boundless Horizons in Technology</h3>
+                        <p>Driven by an insatiable curiosity, I've continuously sought to expand my understanding and skills in computing. From hands-on experiences with microbit to theoretical explorations in the classroom, each encounter deepened my appreciation for the wonders of technology. Participating in competitions like the National Olympiad of Informatics and hackathons such as "BuildingBlocs" provided exciting challenges and opportunities for growth, further fueling my passion for innovation.</p>
+                    </div>
+                    <div class="vertical__item">
+                        <h3>Dreams for the future:</h3>
+                        <p>As I continue to evolve as a technologist, my sights are set on a future as a software developer, leveraging my expertise to create meaningful solutions that positively impact our world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="transition" id="third-section">
+        <h1 id="section-title2">Section 2</h1>
+        <h1 id="projects-title" style="opacity: 0; transform: scale(0);">Projects</h1>
+    </section>
+    <section id="horizontal">
+        <div class="container">
+            <div class="horizontal__content">
+                <div class="horizontal__item">
+                    <div class="horizontal__num">
+                        <h1>01</h1>
+                    </div>
+                    <center>
+                        <p class="horizontal__text">The first project is a working login and registration system that uses PHP and MYSQL to handle the creation and storing of users data delivering a robust login and registration system. It facilitates user creation, login credential verification, and user data storage. Utilizing XAMPP for integration, it ensures seamless PHP-MySQL interaction. Additionally, it incorporates a gaming feature where users earn XP points by guessing numbers, eventually advancing levels. All data, including XP and levels, is managed within a MySQL database, enhancing user engagement and system functionality.</p>
+                        <button class="horizontal__btn" onclick="redirectToProject1()">See Project on GitHub</button>
+                    </center>
+                </div>
+                <div class="horizontal__item">
+                    <div class="horizontal__num">
+                        <h1>02</h1>
+                    </div>
+                    <center>
+                        <p class="horizontal__text">The second project is a simple python Artificial Intelligence, made so that I can understand the fundamentals of machine learning and AI. Utilizing libraries like Pandas, NumPy, and scikit-learn, it constructs a simple linear regression model. The model predicts the time required for tasks based on their difficulty level, aiding in time management. By visualizing the data and evaluating model performance, this project offers practical insights into the application of machine learning techniques in real-world scenarios.</p>
+                        <button class="horizontal__btn" onclick="redirectToProject2()">See Project on GitHub</button>
+                    </center>
+                </div>
+                <div class="horizontal__item">
+                    <div class="horizontal__num">
+                        <h1>03</h1>
+                    </div>
+                    <center>
+                        <p class="horizontal__text">The third project is a wordle clone made in C++. By leveraging fundamental programming concepts and system functionalities, it creates an interactive word-guessing experience. The program randomly selects a word from a provided dictionary and challenges the player to guess it within five attempts. Through dynamic console color changes and feedback mechanisms, players receive visual cues to aid their guesses. This project not only showcases C++ proficiency but also highlights the fusion of logic, user interaction, and visual elements in game development.</p>
+                        <button class="horizontal__btn" onclick="redirectToProject3()">See Project on GitHub</button>
+                    </center>
+                </div>
+                <div class="horizontal__item">
+                    <div class="horizontal__num">
+                        <h1>04</h1>
+                    </div>
+                    <center>
+                        <p class="horizontal__text">
+                            The fourth project uses HTML, CSS, and JavaScript bringing the classic game of Tic-Tac-Toe to life in a web environment. With intuitive user interface design and dynamic functionality, it offers players an engaging gaming experience directly in their browsers. Leveraging modern web technologies, including CSS Grid for layout and JavaScript for game logic, this project demonstrates the fusion of front-end development skills to create interactive and visually appealing web applications.</p>
+                        <button class="horizontal__btn" onclick="redirectToProject4()">See Project on GitHub</button>
+                    </center>
+                </div>
+                <div class="horizontal__item">
+                    <div class="horizontal__num">
+                        <h1>05</h1>
+                    </div>
+                    <center>
+                        <p class="horizontal__text">The fifth project is a python script that replicates the Pokedex from Pokemon. It provides users with various functionalities to explore and interact with Pokemon data. Leveraging CSV parsing and menu-driven interaction, it enables users to perform tasks like displaying Pokemon details, searching for specific types, filtering by stats, and even catching Pokemon. With dynamic functionalities like catching wild Pokemon based on weighted probabilities and interactive menu options, this script offers an immersive experience akin to the iconic Pokedex from the Pokemon universe.</p>
+                        <button class="horizontal__btn" onclick="redirectToProject5()">See Project on GitHub</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="transition" id="fourth-section">
+        <h1 id="conclusion1" style="opacity: 0; transform: scale(0);">Thats it...</h1>
+    </section>
+    <section class="transition" id="fifth-section">
+        <h1 id="conclusion2" style="opacity: 0; transform: scale(0);">For now...</h1>
+    </section>
+    <section>
+        <center>
+            <a href="surprise.html"><button class="surprise">Surprise Me!</button></a>
+        </center>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-section links">
+                <h1>Quick Links</h1>
+                <ul>
+                    <li><button id="aboutBtn" class="libtn">About</button></li>
+                    <br>
+                    <li><button id="projectsBtn" class="libtn">Projects</button></li>
+                </ul>
+            </div>
+            <div class="footer-section contact" id="footer-contact">
+                <h1>Contact</h1>
+                <p>Email: <span>aryan.syam.2024@vjc.edu.sg</span></p>
+                <p>Phone: <span>+65 8885 6756</span></p>
+            </div>
+            <div class="footer-section social">
+                <h1>Social Media</h1>
+                <a href="https://github.com/aqualicious14" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    <span> Github</span>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 Aryan Syam | Designed by Aryan Syam
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/three@0.126.1/build/three.min.js"></script>
+    <script src="https://kit.fontawesome.com/2112a4b804.js" crossorigin="anonymous"></script>
+    <script>
+        let camera, scene, renderer, particles = [];
+        let lastScrollY = window.scrollY;
+        let isScrolling = false;
+
+        init();
+        animate();
+
+        function init() {
+            // Camera setup
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
+            camera.position.z = 300;
+
+            // Scene setup
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x000000); // Background color
+
+            // Particle creation
+            const particleCount = 100;
+            for (let i = 0; i < particleCount; i++) {
+                const geometry = new THREE.SphereGeometry(2, 32, 32); // Size of particles
+                const material = new THREE.MeshBasicMaterial({
+                    color: 0xde0a26, // Red color for all particles
+                    transparent: true,
+                    opacity: 0.8
+                });
+
+                let particle = new THREE.Mesh(geometry, material);
+                particle.position.x = (Math.random() - 0.5) * window.innerWidth;
+                particle.position.y = (Math.random() - 0.5) * window.innerHeight;
+                particle.position.z = (Math.random() - 0.5) * 500;
+                particle.velocity = new THREE.Vector3((Math.random() - 0.5) * 0.5, (Math.random() - 0.5) * 0.5, 0);
+                particle.material.opacity = Math.random() * 0.5 + 0.5; // Random opacity for blurriness effect
+
+                scene.add(particle);
+                particles.push(particle);
+            }
+
+            // Renderer setup
+            renderer = new THREE.WebGLRenderer({ alpha: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+            window.addEventListener('resize', onWindowResize, false);
+            window.addEventListener('scroll', onScroll, false);
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            particles.forEach(particle => {
+                if (!isScrolling) {
+                    particle.position.x += particle.velocity.x;
+                    particle.position.y += particle.velocity.y;
+                }
+
+                // Wrap particles around the screen
+                if (particle.position.y > window.innerHeight / 2) {
+                    particle.position.y = -window.innerHeight / 2;
+                } else if (particle.position.y < -window.innerHeight / 2) {
+                    particle.position.y = window.innerHeight / 2;
+                }
+
+                if (particle.position.x > window.innerWidth / 2) {
+                    particle.position.x = -window.innerWidth / 2;
+                } else if (particle.position.x < -window.innerWidth / 2) {
+                    particle.position.x = window.innerWidth / 2;
+                }
+            });
+
+            render();
+        }
+
+        function render() {
+            renderer.render(scene, camera);
+        }
+
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        function onScroll() {
+            isScrolling = true;
+            let scrollDelta = window.scrollY - lastScrollY;
+            particles.forEach(particle => {
+                particle.position.y += scrollDelta * 0.1; // Adjust scroll sensitivity
+            });
+
+            lastScrollY = window.scrollY;
+            setTimeout(() => isScrolling = false, 5); // Reset scrolling status shortly after scrolling stops
+        }
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
