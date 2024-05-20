@@ -24,12 +24,19 @@ This project serves as a personal portfolio to highlight my journey in computing
 # File Structure
 
 webfolio/
+
 ├── index.html
+
 ├── styles.css
+
 ├── script.js
+
 ├── surprise.html
+
 ├── style_surprise.css
+
 ├── surprise.js
+
 
 - index.html: Main portfolio webpage.
 - styles.css: Stylesheet for the main webpage.
